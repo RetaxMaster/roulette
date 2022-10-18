@@ -1,0 +1,92 @@
+html,
+body,
+main {
+    height: 100%;
+}
+
+body main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main .roulette-container {
+    position: relative;
+}
+
+main .roulette-container #selector {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    display: inline-block;
+    width: 0%;
+    height: 0%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #f2f2f2;
+    z-index: 1;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#roulette {
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 100%;
+    transition-property: transform;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+#roulette .roulette-section {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+}
+
+#roulette .roulette-section .roulette-section-container {
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    text-align: center;
+    padding-top: 20px;
+    transform: skewY(60deg) rotate(15deg);
+    -webkit-transform: skewY(60deg) rotate(15deg);
+    -moz-transform: skewY(60deg) rotate(15deg);
+    -ms-transform: skewY(60deg) rotate(15deg);
+    -o-transform: skewY(60deg) rotate(15deg);
+}
+
+#roulette .roulette-section .roulette-section-container p {
+    margin-top: 30px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.button-container {
+    margin-top: 50px;
+}
+
+.button-container button#reset {
+    display: none;
+}
