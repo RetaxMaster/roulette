@@ -9,7 +9,7 @@ const maxDegrees = 360;
 const minDegrees = 1;
 
 const getRandomNumber = (min, max) => {
-    return Math.random() * (max - min) + min;
+    return Math.round(Math.random() * (max - min) + min);
 }
 
 spinButton.addEventListener("click", () => {
@@ -18,6 +18,7 @@ spinButton.addEventListener("click", () => {
     const degrees = getRandomNumber(minDegrees, maxDegrees);
 
     const fullSpins = (spins - 1) * 360;
+    console.log(fullSpins);
     const spin = fullSpins + degrees;
 
     const animationTime = spins;

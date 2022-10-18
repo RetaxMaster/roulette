@@ -66,7 +66,7 @@ main .roulette-container #selector {
     width: 200%;
     height: 200%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     transform: skewY(60deg) rotate(15deg);
     -webkit-transform: skewY(60deg) rotate(15deg);
     -moz-transform: skewY(60deg) rotate(15deg);
